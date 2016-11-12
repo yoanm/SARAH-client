@@ -3,7 +3,7 @@
 [S.A.R.A.H.](http://sarah.encausse.net) is an OpenSource client/server framework to control Internet of Things using Voice, Gesture, Face, QRCode recognition. It is heavily bound to Kinect v1 and v2 SDK.
 
 
-This project contains C# **Client for SARAH**. And will communicate with [NodeJS Server for SARAH](...).
+This project contains C# **Client for SARAH**. And will communicate with [NodeJS Server for SARAH](https://github.com/yoanm/SARAH-Server-NodeJS).
 
 
 ## License
@@ -378,3 +378,20 @@ This AddOn provide a window (and a menu item) to display other AddOns data.
 - Window are sized according to color frame (ratio)
 - Window have a sidebar where addons put new controls
 - A dedicated footer can be used by ProfileManager
+
+## Getting started
+### Download
+```bash
+> git clone https://github.com/yoanm/SARAH-client.git
+```
+ 
+### Tweak 
+ * Edit [custom.ini](./custom.ini) file and set what you need. By default S.A.R.A.H will enable only microphone and will be launched in debug mode.
+ 
+### Launch
+ - Run [Start_Client.cmd](./Start_Client.cmd)
+ - To check if client is running go to http://127.0.0.1:8888/?tts=Ok. S.A.R.A.H should tell you "Ok".
+ - In [debug mode](./custom.ini#L31), client will log helpful information in [AddOns/debug](./AddOns/debug)/YYYY-mm-dd.log
+
+### What's next
+If not already done, install and start [S.A.R.A.H server](https://github.com/yoanm/SARAH-Server-NodeJS) !
